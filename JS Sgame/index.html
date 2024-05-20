@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>JS Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="idd">
+   
+    <h1>Choose Correct Number</h1>
+    <h1>***Number between 1-10***</h1>
+    <h1> <input type="text" id="guess"></h1>
+    <h1> <button id="gguess"><h1>??GUESS??</h1></button></h1>
+    
+
+    <script type="text/javascript">
+
+        document.getElementById("gguess").onclick = function() {
+            var randomNumber = Math.random();
+            randomNumber = randomNumber * 11;
+            randomNumber = Math.floor(randomNumber);
+
+            if(document.getElementById("guess").value == randomNumber) {
+                alert("**EXCELLENT**");
+            }
+            else {
+                alert("??TRY AGAIN??");
+
+            }
+        }
+        
+    </script>
+</body>
+</html>
